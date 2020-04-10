@@ -5,7 +5,7 @@ const Schema = mongoose.Schema
 const projectSchema = new Schema({
   project: {
     type: String,
-    Owner: String,
+    User_id: String,
     index: true
   },
   description: String,

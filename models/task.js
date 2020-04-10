@@ -4,12 +4,19 @@ const Schema = mongoose.Schema;
 
 const taskSchema = new Schema({
   project_id: Number,
-  user_id: String,
+  assigned_to: String,
   description: String,
-  Due_date: {
+  priority: String,
+  due_date: {
     type: Date,
     default: Date.now
-  }
+  },
+  status: {
+    type: String,
+    default: "to-do"
+
+  },
+  
   
 })
 
