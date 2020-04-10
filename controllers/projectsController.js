@@ -2,7 +2,7 @@ const db = require("../models");
 
 // defining methods for the projectsController
 module.exports = {
-    // findAll set to sort based on due date in descending order
+    // findAll set to sort based on due date in ascending order
     findAll: function(req, res){
         db.Project
             .find(req.query)
