@@ -1,26 +1,16 @@
+import React from "react";
 import "./style.css";
-import React, { Component, useRef, useEffect } from 'react';
-import { render } from 'react-dom';
 // import ReactDOM from 'react-dom'
 
 
 class Chat extends React.Component {
-    
     constructor(props) {
         super(props);
-      
-        const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)   
-        const useMountEffect = (fun) => useEffect(fun, [])
-        
-        const ScrollDemo = () => {
-            const myRef = useRef(null)
-        
-            useMountEffect(() => scrollToRef(myRef)) // Scroll on mountA
-        }
-        
+        this.myRef = React.createRef()  
+
         this.state = {
             value: '',
-            toDoList: []
+            chat: []
         };
 
         this.handleChange = this.handleChange.bind(this);
@@ -39,11 +29,9 @@ class Chat extends React.Component {
         }
 
         const itemsArray = this.state.value.split(',');
-        this.setState({toDoList: itemsArray});
-        var items = this.state.toDoList.concat(itemsArray);
-        this.setState({toDoList: items})
-   
-
+        this.setState({chat: itemsArray});
+        var items = this.state.chat.concat(itemsArray);
+        this.setState({chat: items})
 
         event.preventDefault();
         this.state.value = ""
@@ -51,8 +39,8 @@ class Chat extends React.Component {
 
     render() {
 
-        console.log(this.state.toDoList)
-        const items = this.state.toDoList.map((item) => <li>{item}</li>);
+        console.log(this.state.chat)
+        const items = this.state.chat.map((item) => <li>{item}</li>);
 
         return (
             
@@ -77,6 +65,5 @@ class Chat extends React.Component {
     }
 
 }
-
 
 export default Chat;

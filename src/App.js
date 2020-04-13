@@ -2,10 +2,13 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Chat from './components/chat';
+// import Scroll from './components/chat';
 
+ 
 
 
 function App() {
+ 
   return (
     <div className="App">
       <header className="App-header">
@@ -23,7 +26,7 @@ function App() {
         </a>
       </header>
       <Chat />
-    </div>
+      </div>
   );
 }
 
