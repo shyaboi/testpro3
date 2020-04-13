@@ -9,32 +9,37 @@ class Chat extends React.Component {
 
         this.state = {
             value: '',
-            toDoList: []
+            toDoList: ['Previous Chat']
         };
 
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
+
     handleChange(event) {
         this.setState({value: event.target.value});
     }
-
     handleSubmit(event) {
-
         if (this.state.value === '') {
             alert('Put some words in the box son')
             return
         }
-
+        
+        
         const itemsArray = this.state.value.split(',');
         this.setState({toDoList: itemsArray});
         var items = this.state.toDoList.concat(itemsArray);
         this.setState({toDoList: items})
-        window.scrollTo(0, document.body.scrollHeight);
         event.preventDefault();
         this.state.value = ""
     }
+    
+    // componentDidUpdate() {
+    //     const element = document.getElementById('li');
+        
+    //     element.scrollIntoView({behavior: 'smooth'});
+    //   }
 
     render() {
 
@@ -42,13 +47,16 @@ class Chat extends React.Component {
         const items = this.state.toDoList.map((item) => <li>{item}</li>);
 
         return (
-            
+
             <form id='chat'
                 onSubmit={
                     this.handleSubmit
             }>
                 <label>
-                    <input ref={(ref) => this.mainInput= ref} type="text"
+                    <input ref={
+                            (ref) => this.mainInput = ref
+                        }
+                        type="text"
                         value={
                             this.state.value
                         }
@@ -56,13 +64,15 @@ class Chat extends React.Component {
                             this.handleChange
                         }/>
                 </label>
+                
                 <input id='butt' type="submit" value="Chat"/>
                 <ul id='k'>
                     {items}</ul>
             </form>
         );
-    }
 
+    }
 }
+
 
 export default Chat;

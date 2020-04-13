@@ -31,9 +31,9 @@
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #999;
-    right: 2vh;
+    right: -3vh;
       position: absolute;
-      bottom: -37vh;
+      bottom: -35vh;
   }
 
   #close:active {

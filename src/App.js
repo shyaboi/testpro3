@@ -1,6 +1,5 @@
 import './App.css';
 import Popup from './components/popup';
-import Chat from './components/chat';
 import React, { Component } from 'react';
 import logo from './components/images/logo7.png'
 class App extends Component {
