@@ -21,11 +21,17 @@ class Chat extends React.Component {
     }
 
     handleSubmit(event) {
+        if (this.state.value == '') {
+            alert('Put some words in the box son')
+            return
+        }
         const itemsArray = this.state.value.split(',');
         this.setState({toDoList: itemsArray});
         var items = this.state.toDoList.concat(itemsArray);
         this.setState({toDoList: items})
+        window.scrollTo(0, document.body.scrollHeight);
         event.preventDefault();
+        this.mainInput.value = ""
     }
 
     render() {
@@ -41,8 +47,7 @@ class Chat extends React.Component {
                 <ul id='k'>
                     {items}</ul>
                 <label>
-                    Chat
-                    <input type="text"
+                    <input ref={(ref) => this.mainInput= ref} type="text"
                         value={
                             this.state.value
                         }
@@ -50,7 +55,7 @@ class Chat extends React.Component {
                             this.handleChange
                         }/>
                 </label>
-                <input type="submit" value="Submit"/>
+                <input id='butt' type="submit" value="Chat"/>
             </form>
         );
     }

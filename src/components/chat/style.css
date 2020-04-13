@@ -1,6 +1,6 @@
 #chat {
     overflow: hidden;
-    height: 90vh;
+    height: 30vh;
     position: fixed;
     left: 0;
     bottom: 2vh;
@@ -15,4 +15,12 @@
     align-items: center;
     justify-content: center;
     font-size: calc(3vh + 1vmin);
+  }
+  input{
+    top: 0;
+    position: absolute;
+  }
+  #butt {
+    right: 82vh;
+    position: absolute;
   }
