@@ -1,10 +1,11 @@
 #chat {
-    overflow: hidden;
-    height: 30vh;
+  height: 15%;
+  width: 100%;
+  overflow: auto;
+  padding-right: 20px;
     position: fixed;
     left: 0;
     bottom: 2vh;
-    width: 100%;
     background: rgb(28,23,105);
     background: linear-gradient(90deg, rgba(28,23,105,1) 0%, rgba(28,28,171,1) 35%, rgba(212,86,207,1) 59%, rgba(146,237,255,1) 100%);
     color: white;
@@ -17,10 +18,31 @@
     font-size: calc(3vh + 1vmin);
   }
   input{
+    margin: 1vh;
+    padding: 1vh;
+    float: left;
+    left: 0;
     top: 0;
     position: absolute;
   }
   #butt {
-    right: 82vh;
+   
+    padding: 1vh;
+    float: left;
+    top: 7vh;
     position: absolute;
+  }
+  #k {
+    font-size: 2vh;
+    text-align: center;
+    position: relative;
+    left: 55vh;
+    width: 50%;
+  }
+  li{
+    background-color: rgba(0, 0, 0, 0.75);
+    outline-color: rgba(0, 0, 0, 0.75);
+    outline: 2px;
+    padding: .5vh;
+    margin: .5vh;
   }
