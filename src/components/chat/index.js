@@ -6,9 +6,10 @@ import ReactDOM from 'react-dom'
 class Chat extends React.Component {
     constructor(props) {
         super(props);
+
         this.state = {
             value: '',
-            toDoList: ['dave', 'davee2', 'save3']
+            toDoList: []
         };
 
         this.handleChange = this.handleChange.bind(this);
@@ -22,9 +23,14 @@ class Chat extends React.Component {
     handleSubmit(event) {
         const itemsArray = this.state.value.split(',');
         this.setState({toDoList: itemsArray});
+        var items = this.state.toDoList.concat(itemsArray);
+        this.setState({toDoList: items})
+        event.preventDefault();
     }
 
     render() {
+
+        console.log(this.state.toDoList)
         const items = this.state.toDoList.map((item) => <li>{item}</li>);
 
         return (
