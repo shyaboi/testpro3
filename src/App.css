@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+#open{
+  max-width: 1300%;
+  max-height: 1300%;
+}
+
+#open:active {
+  background-color: #61dafb;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#main {
+  text-align: center;
+}
