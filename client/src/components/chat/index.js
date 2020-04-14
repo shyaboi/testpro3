@@ -44,40 +44,39 @@ class Chat extends React.Component {
     render() {
 
         console.log(this.state.toDoList)
-        const items = this.state.toDoList.map((item) => <li>{item}</li>);
+        const items = this.state.toDoList.map((item) => <li id='chats'>
+            {item}</li>);
 
         return (
             <div id='chat'>
-            <div id='grid-container'>
-                <label>
-                    
-                                <form
-                                onSubmit={
-                                    this.handleSubmit
-                                }>
-                    <input ref={
-                            (ref) => this.mainInput = ref
-                        }
-                        type="text"
-                        value={
-                            this.state.value
-                        }
-                        onChange={
-                            this.handleChange
-                        }/>
-            </form>
-                        <div>
-                </div>
-                <input id='butt' type="submit" value="Chat"/>
-                </label>
-                <button id='close' onClick={this.props.closePopup}>close me</button> 
-            </div>
+                <div id='grid-container'>
+                    <label>
+
+                        <form onSubmit={
+                            this.handleSubmit
+                        }>
+                            <input type="text"
+                                value={
+                                    this.state.value
+                                }
+                                onChange={
+                                    this.handleChange
+                                }/>
+                                <button type='submit' id='butt'>chat</button>
+                        </form>
+                        <div></div>
+                        
+                    </label>
+                    {/* <button id='close'
+                        onClick={
+                            this.props.closePopup
+                    }>close me</button> */} </div>
                 <div id='grid-containe2'>
-                <ul id='messages'>
-                    {items}</ul>
+                    <ul id='messages'>
+                        {items}</ul>
                 </div>
-                </div>
-            );
+            </div>
+        );
 
     }
 }
