@@ -34,6 +34,10 @@ export default {
     return axios.get("/api/deadlines");
   },
 
+  updateDeadlines: function (id) {
+    return axios.put("/api/deadlines/" + id);
+  },
+
   deleteDeadline: function (id) {
     return axios.delete("/api/deadlines/" + id);
   },
