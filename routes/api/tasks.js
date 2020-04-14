@@ -3,7 +3,7 @@ const taskController = require("../../controllers/taskController");
 
 router.route("/").get(taskController.findAll).post(taskController.create);
 
-// Matches with "/api/task/:id"
+// Matches with "/api/tasks/:id"
 router
   .route("/:id")
   .get(taskController.findById)
