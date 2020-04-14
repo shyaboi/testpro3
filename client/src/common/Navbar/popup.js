@@ -18,11 +18,11 @@ class PopButt extends Component {
   render() {
     return (
      <div> 
-       <img onClick={this.togglePopup.bind(this)} src={logo}
-     alt="logo"/>
+       <img id='logo' onClick={this.togglePopup.bind(this)} src={logo}
+     alt="mail poem"/>
        {this.state.showPopup ?
          <Popup
-        
+          text='Click "Close Button" to hide popup'
           closePopup={this.togglePopup.bind(this)}
          />
          : null

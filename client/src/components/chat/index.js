@@ -47,13 +47,14 @@ class Chat extends React.Component {
         const items = this.state.toDoList.map((item) => <li>{item}</li>);
 
         return (
-
-            <form id='chat'
-                onSubmit={
-                    this.handleSubmit
-            }>
-<div id='grid-container'>
+            <div id='chat'>
+            <div id='grid-container'>
                 <label>
+                    
+                                <form
+                                onSubmit={
+                                    this.handleSubmit
+                                }>
                     <input ref={
                             (ref) => this.mainInput = ref
                         }
@@ -64,16 +65,18 @@ class Chat extends React.Component {
                         onChange={
                             this.handleChange
                         }/>
-                <button id='close' onClick={this.props.closePopup}>close me</button> 
-
+            </form>
+                        <div>
+                </div>
                 <input id='butt' type="submit" value="Chat"/>
                 </label>
+                <button id='close' onClick={this.props.closePopup}>close me</button> 
             </div>
                 <div id='grid-containe2'>
-                <ul id='k'>
+                <ul id='messages'>
                     {items}</ul>
                 </div>
-            </form>
+                </div>
             );
 
     }

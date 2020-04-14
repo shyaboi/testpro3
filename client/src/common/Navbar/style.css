@@ -76,27 +76,16 @@ nav.navbar.navbar-default {
   
     }
     
-    li {
+
+
+    #popButt {
       font-family: 'Roboto', sans-serif;
-  
-      padding-left: 20%;
-      padding-right: 70%;
-      float: left;
+  border-radius: 90%;
+  float: left;
     }
     
-    li a {
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
-/*     
-    li a:hover {
-      background: rgb(71,71,167);
-  background: linear-gradient(90deg, rgba(71,71,167,1) 35%, rgba(212,86,207,1) 74%, rgba(146,237,255,1) 100%);
-    }
-   */
+   
+  
     #logo{
       border-radius: 90%;
       max-width: 8vh;
@@ -104,8 +93,8 @@ nav.navbar.navbar-default {
     }
 
 
-/* #logo:active {
+#logo:active {
   background: rgb(2,0,36);
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(28,28,171,1) 35%, rgba(146,237,255,1) 100%);
   transform: translateY(4px);
-} */
+}

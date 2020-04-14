@@ -88,7 +88,7 @@ input { grid-area: i; }
    transform: translateY(4px);
  }
 
-  #k {
+  #messages {
     font-size: 2vh;
     text-align: center;
     position: relative;
