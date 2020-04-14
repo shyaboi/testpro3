@@ -1,0 +1,111 @@
+nav.navbar.navbar-default {
+    margin-bottom: 2vw;
+    
+  }
+  #signInOut{
+      border-radius: 90%;
+    width: 8vh;
+    height: 6vh;
+    margin-bottom: 1%;
+   
+  }
+  #signInOut:active {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(28,28,171,1) 35%, rgba(146,237,255,1) 100%);
+    
+  
+    transform: translateY(4px);
+  }
+
+  #signIn{
+      background-color: aquamarine;
+    border-radius: 90%;
+  width: 8vh;
+  height: 6vh;
+  margin-bottom: 1%;
+ 
+}
+#signIn:active {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(28,28,171,1) 35%, rgba(146,237,255,1) 100%);
+  
+
+  transform: translateY(4px);
+}
+  
+
+
+#signOut{
+    background-color: red;
+    border-radius: 90%;
+  width: 8vh;
+  height: 6vh;
+  margin-bottom: 1%;
+ 
+}
+#signOut:active {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(28,28,171,1) 35%, rgba(146,237,255,1) 100%);
+  
+
+  transform: translateY(4px);
+}
+
+
+
+  nav{
+    text-align: center;
+    margin-bottom: 0;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(28,28,171,1) 35%, rgba(146,237,255,1) 100%);
+    font-family: 'Roboto', sans-serif;
+    
+  }
+  
+    ul {
+      -webkit-box-shadow: 0px 2px 9px 5px rgba(41,41,40,1);
+    -moz-box-shadow: 0px 2px 9px 5px rgba(41,41,40,1);
+    box-shadow: 0px 2px 9px 5px rgba(41,41,40,1);
+      font-family: 'Roboto', sans-serif;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background: rgb(117,110,231);
+      background: linear-gradient(90deg, rgba(117,110,231,1) 0%, rgba(28,28,171,1) 35%, rgba(212,86,207,1) 74%, rgba(146,237,255,1) 100%);
+  
+    }
+    
+    li {
+      font-family: 'Roboto', sans-serif;
+  
+      padding-left: 20%;
+      padding-right: 70%;
+      float: left;
+    }
+    
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+/*     
+    li a:hover {
+      background: rgb(71,71,167);
+  background: linear-gradient(90deg, rgba(71,71,167,1) 35%, rgba(212,86,207,1) 74%, rgba(146,237,255,1) 100%);
+    }
+   */
+    #logo{
+      border-radius: 90%;
+      max-width: 8vh;
+      max-height: 8vh;
+    }
+
+
+/* #logo:active {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(28,28,171,1) 35%, rgba(146,237,255,1) 100%);
+  transform: translateY(4px);
+} */
